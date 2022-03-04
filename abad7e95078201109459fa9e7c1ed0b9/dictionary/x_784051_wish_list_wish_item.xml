@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Wish Item" max_length="40" name="x_784051_wish_list_wish_item" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element display="true" label="Requestor" max_length="32" name="requestor" reference="sys_user" type="reference"/>
+        <element label="Item" max_length="100" name="item" type="string"/>
+        <index name="index">
+            <element name="requestor"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
